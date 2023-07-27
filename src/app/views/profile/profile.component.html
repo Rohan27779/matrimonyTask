@@ -1,0 +1,22 @@
+<div class="profile-page">
+
+  <div class="header">
+    <a class="back-button" (click)="goBack()">
+      <i class="material-icons">arrow_back</i>
+    </a>
+    <h1 *ngIf="profileData">{{profileData.id}}</h1>
+  </div>
+
+  <div class="content" *ngIf="profileData">
+    <div class="slides profile-image-carousel">
+      <div class="header-image slide" [style.background-image]="'url(' + profileData.image + ')'"></div>
+    </div>
+    <div class="profile-card">
+      <div class="header">{{profileData.name}}</div>
+      <p class="profile-info">{{profileData.age}}, {{profileData.height}}, {{profileData.language}},
+        {{profileData.caste}},</p>
+      <p class="profile-info">{{profileData.work}}, {{profileData.location}},</p>
+      <p class="profile-info">{{profileData.state}}, {{profileData.nationality}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,177 @@
+.daily-recommendation {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.gradientBackground {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(122deg, rgba(89, 186, 107, 1) 44%, rgba(32, 176, 188, 1) 100%);
+}
+
+.profileCard {
+  display: flex;
+  justify-content: center;
+
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
+.profile {
+  width: 95%;
+  max-width: 400px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  border-radius: 5px;
+
+
+  @media (max-width: 767px) {
+    flex: 3 0 45%;
+    max-width: 381px;
+  }
+}
+
+
+.headerImage {
+  height: 24vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.cardData {
+  padding: 10px;
+  text-align: left;
+}
+
+.header {
+  font-size: 1.5em;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  margin-bottom: 0.3em;
+}
+
+.profile-info {
+  line-height: 1.2em;
+  font-size: 14px;
+  color: #000;
+}
+
+.line {
+  width: 95%;
+  height: 0;
+  border: 1px ridge #f8f8f8;
+  margin-top: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+}
+
+.small {
+  font-size: 10px;
+  color: #000;
+}
+
+.likeText {
+  font-weight: 700;
+  color: #000;
+  margin-right: 5px;
+}
+
+.ok,
+.cancel {
+  padding: 0.7em 1.5em;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ok {
+  background: #3498db;
+}
+
+.cancel {
+  background: #e74c3c;
+}
+
+.success-snack {
+  background-color: green;
+  color: white;
+}
+
+.error-snack {
+  background-color: red;
+  color: white;
+}
+
+.scroll-container {
+  overflow-x: auto;
+  margin: 10px 0;
+}
+
+
+@media (max-width: 767px) {
+  .scroll-container {
+    max-width: 100%;
+  }
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-container {
+  scrollbar-width: none;
+}
+
+
+
+.tphoto {
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  top: 15px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border: 1px solid #c0c0c0;
+  padding-bottom: 60px;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px #c0c0c0;
+}
+
+.tname {
+  padding: 15px;
+  font-size: 20px;
+  font-family: 'Helvetica', sans-serif;
+  float: left;
+}
+.tname .age { font-weight: 200; }
+.tinfo { font-family: 'Helvetica', sans-serif; }
+.tinfo .fa-users, .tinfo .fa-book {
+  color: #c0c0c0;
+  float: right;
+  position: relative;
+  font-size: 24px;
+  padding: 12px;
+}
+
+

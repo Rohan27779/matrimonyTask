@@ -1,0 +1,37 @@
+<div class="gradientBackground">
+  <div class="daily-recommendation">
+    <header class="header">
+      <h1 style="color: white">Daily Recommendations</h1>
+    </header>
+    <div class="scroll-container">
+      <div class="tphoto" [@cardAnimator]="animationState" (@cardAnimator.done)="resetAnimationState($event)"
+        (@cardAnimator.done)="handleCardAnimationDone($event.toState)" (swipeleft)='startAnimation("swipeleft")'
+        (swiperight)='startAnimation("swiperight")'>
+
+        <div class="profile" *ngFor="let profile of profiles" [@cardAnimation]="profile.state"
+          [@cardAnimation]="getAnimationState(index)">
+          <div class="headerImage" *ngIf="profile.image" [style.background-image]="'url(' + profile.image + ')'"></div>
+          <div class="cardData">
+            <p class="header" style="text-align: left;">{{profile.name}}</p>
+            <p class="profile-info">{{profile.age}}, {{profile.height}}, {{profile.language}}, {{profile.caste}},
+              {{profile.work}},</p>
+            <p class="profile-info">{{profile.location}}, {{profile.state}}</p>
+            <p class="profile-info">{{profile.nationality}}</p>
+            <div class="line"></div>
+            <div class="footer">
+              <div class="like-actions">
+                <span class="likeText">Like ?</span>
+                <button class="cancel profileStatusFalse"
+                  (click)="startAnimation('swipeleft'); profileStatus(false, profile)">✕</button>
+                <button class="ok profileStatusTrue"
+                  (click)="startAnimation('swiperight'); profileStatus(true, profile)">✓</button>
+              </div>
+            </div>
+          </div>
+        </div><br><br><br><br>
+      </div>
+    </div>
+
+  </div>
+
+</div>

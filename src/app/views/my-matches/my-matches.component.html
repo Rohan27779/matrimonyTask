@@ -1,0 +1,25 @@
+<div class="my-matches">
+  <div class="header">
+    <h1>My Matches</h1>
+    <div class="ellipsis-vertical"></div>
+  </div>
+  <div class="matches-slider">
+    <div class="slide" *ngFor="let profile of profiles">
+      <div class="profile-card">
+        <div class="header-image" [style.background-image]="'url(' + profile.image + ')'"></div>
+        <div class="card-content">
+          <p class="header">{{ profile.name }}</p>
+          <p class="profile-info">{{ profile.age }}, {{ profile.height }}, {{ profile.language }}, {{ profile.caste }},</p>
+          <p class="profile-info">{{ profile.work }}, {{ profile.location }},</p>
+          <p class="profile-info">{{ profile.state }}, {{ profile.nationality }}</p>
+          <div class="footer-card">
+            <div class="action-buttons">
+              <button class="yes-button" (click)="toProfile(profile.id)">Yes</button>
+              <button class="no-button">No</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

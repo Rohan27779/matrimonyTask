@@ -1,0 +1,67 @@
+[
+  {
+    "id": "M982545",
+    "name": "Alok",
+    "age": 27,
+    "height": "5 ft 2 in",
+    "language": "Hindi",
+    "caste": "Brahmin",
+    "work": "Software Engineer",
+    "location": "Delhi",
+    "state": "Delhi",
+    "nationality": "India",
+    "image": "./assets/images/1.jpg"
+  },
+  {
+    "id": "M982546",
+    "name": "Akansha",
+    "age": 27,
+    "height": "5 ft 7 in",
+    "language": "Hindi",
+    "caste": "Jat",
+    "work": "Civil Services",
+    "location": "Lucknow",
+    "state": "Uttar Pradesh",
+    "nationality": "India",
+    "image": "./assets/images/3.jpg"
+  },
+  {
+    "id": "M982547",
+    "name": "Amar",
+    "age": 27,
+    "height": "5 ft 5 in",
+    "language": "Hindi",
+    "caste": "Rajput",
+    "work": "Doctor",
+    "location": "Jaipur",
+    "state": "Rajasthan",
+    "nationality": "India",
+    "image": "./assets/images/2.jpg"
+  },
+  {
+    "id": "M982548",
+    "name": "Anamika",
+    "age": 27,
+    "height": "5 ft 3 in",
+    "language": "Hindi",
+    "caste": "Baniya",
+    "work": "Businessman",
+    "location": "Lucknow",
+    "state": "Uttar Pradesh",
+    "nationality": "India",
+    "image": "./assets/images/4.jpg"
+  },
+  {
+    "id": "M982549",
+    "name": "Ankit",
+    "age": 27,
+    "height": "5 ft 2 in",
+    "language": "Hindi",
+    "caste": "Kayastha",
+    "work": "Banking Professional",
+    "location": "Delhi",
+    "state": "Delhi",
+    "nationality": "India",
+    "image": "./assets/images/1.jpg"
+  }
+]
